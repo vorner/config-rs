@@ -251,3 +251,16 @@ fn test_enum_key() {
     assert_eq!(s.proton[&Quark::Up], 2);
     assert_eq!(s.quarks.len(), 6);
 }
+
+#[test]
+fn test_int_key() {
+    #[derive(Debug, Deserialize, PartialEq)]
+    struct Settings {
+        divisors: HashMap<u32, u32>,
+    }
+
+    let c = make();
+    let s: Settings = c.try_into().unwrap();
+    assert_eq!(s.divisors[&4], 3);
+    assert_eq!(s.divisors.len(), 4);
+}

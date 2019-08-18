@@ -45,3 +45,9 @@ name = "John Smith"
 [proton]
 up = 2
 down = 1
+
+[divisors]
+1 = 1
+2 = 2
+4 = 3
+5 = 2
