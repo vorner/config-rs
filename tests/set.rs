@@ -1,6 +1,6 @@
-extern crate config;
+extern crate config_spirit_fork;
 
-use config::*;
+use config_spirit_fork::*;
 
 #[test]
 fn test_set_scalar() {

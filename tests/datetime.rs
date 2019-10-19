@@ -7,10 +7,10 @@
 ))]
 
 extern crate chrono;
-extern crate config;
+extern crate config_spirit_fork;
 
 use chrono::{DateTime, TimeZone, Utc};
-use config::*;
+use config_spirit_fork::*;
 
 fn make() -> Config {
     Config::default()

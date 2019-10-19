@@ -1,13 +1,13 @@
 #![cfg(feature = "hjson")]
 
-extern crate config;
+extern crate config_spirit_fork;
 extern crate float_cmp;
 extern crate serde;
 
 #[macro_use]
 extern crate serde_derive;
 
-use config::*;
+use config_spirit_fork::*;
 use float_cmp::ApproxEqUlps;
 use std::collections::HashMap;
 

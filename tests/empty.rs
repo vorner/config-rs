@@ -1,9 +1,9 @@
-extern crate config;
+extern crate config_spirit_fork;
 
 #[macro_use]
 extern crate serde_derive;
 
-use config::*;
+use config_spirit_fork::*;
 
 #[derive(Debug, Serialize, Deserialize)]
 struct Settings {

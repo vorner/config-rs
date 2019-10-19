@@ -1,8 +1,8 @@
 #![cfg(feature = "toml")]
 
-extern crate config;
+extern crate config_spirit_fork;
 
-use config::*;
+use config_spirit_fork::*;
 
 fn make() -> Config {
     let mut c = Config::default();
